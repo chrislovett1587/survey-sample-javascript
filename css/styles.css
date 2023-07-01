@@ -1,0 +1,108 @@
+header {
+    background-color: black;
+}
+
+body{ 
+    width: 60%;
+    margin: auto;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    color: white !important;
+    font-size: 10px !important;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+}
+
+h2 {
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+fieldset {
+    border: 5px solid black;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+fieldset#results img {
+    margin: 5px auto 5px;
+}
+
+fieldset#validfield label {
+        display: block;
+    }
+
+fieldset#validfield span {
+        font-size: 12px !important;
+        padding: 2px 0px 2px;
+    }
+
+fieldset.inner {
+    border: 0px !important;
+}
+
+legend {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+legend#smaller {
+    font-size: 16px !important;
+    background-color: none !important;
+    border: 0px !important;
+    padding: 2px 0px 2px !important;
+}
+
+.button {
+    display: block;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 5px 0px 5px;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+div#capresult, div#titleresult {
+    text-align: center;
+}
+
+div#picresult img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+div#userInfo {
+    font-size: 10px;
+    text-align: center;
+}
+
+div#anon {
+    font-size: 10px;
+}

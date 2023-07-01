@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey &ndash; Christopher Lovett</title>
+        
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <script type="text/javascript" src="js/process_form.js"></script>
+    </head>
+
+    <body>
+        <!-- Quiz title and general header go here!!! -->
+        <header>
+            <h1>Which Sick Meme Are YOU???</h1>
+        </header>
+
+        <!-- Process form -->
+        <form action="process_form.js" method="post" id="validform" name="validform">
+            <fieldset id="validfield">
+                <!-- Will include five DIVs to help separate each input area. -->
+
+                <legend>User Info</legend>
+
+                <!-- First Name -->
+                <div id="q1">
+                    <label for="fname">First Name:</label>
+                    <input id="fname" type="text" name="validfname" value>
+                    <span>
+                        <span id="newImage1"></span>
+                    </span>
+                </div>
+
+                <div id="q2">
+                    <label for="lname">Last Name:</label>
+                    <input id="lname" type="text" name="validlname" value>
+                    <span>
+                        <!-- Below Span is specifically for images. -->
+                        <span id="newImage2"></span>
+                    </span>
+                </div>
+
+                <div id="q3">
+                    <label for="email">E&ndash;mail Address:</label>
+                    <input id="email" type="text" name="validemail" value>
+                    <span>
+                        <!-- Below Span is specifically for images. -->
+                        <span id="newImage3"></span>
+                    </span>
+                </div>
+
+                <div id="q4">
+                    <label for="phone">Phone Number:</label>
+                    <input id="phone" type="text" name="validphone" value>
+                    <span>
+                        <!-- Below Span is specifically for images. -->
+                        <span id="newImage4"></span>
+                    </span>
+                </div>
+
+                                <div id="q5">
+                    <label for="fname">Student Email:</label>
+                    <input id="address" type="text" name="validaddress" value>
+                    <span>
+                        <!--Below Span is specifically for images.-->
+                        <span id="newImage5"></span>
+                    </span>
+                </div>
+
+                <div id="submit">
+                    <input type="button" class="button" id="validbutton" name="validbutton" value="Submit Info">
+                </div>
+
+                <div id="anon">
+                    <input type="checkbox" id="validcheck" name="validcheck">Anonymous
+                </div>
+            </article>
+        </fieldset>
+        <!-- End processSection -->
+
+        <!-- Survey Section -->
+        <form id="surveyform">
+            <fieldset id="survey">
+                <legend>The Quiz...</legend>
+
+                <fieldset class="inner" id="surveyq1">
+                    <legend id="smaller">What emotion do you most relate with?</legend>
+                    
+                    <label>Grief</label>
+                    <input type="radio" id="q1radio1" name="q1name" value="grief">
+                    &#124;
+                    <label>Anger</label>
+                    <input type="radio" id="q1radio2" name="q1name" value="anger">
+                    &#124;
+                    <label>Pride</label>
+                    <input type="radio" id="q1radio3" name="q1name" value="pride">
+                    &#124;
+                    <label>Disgust</label>
+                    <input type="radio" id="q1radio4" name="q1name" value="disgust">
+                </fieldset>
+                <br>
+                <fieldset class="inner" id="surveyq2">
+                    <legend id="smaller">What's your gamer juice of choice?</legend>
+                    
+                    <label>Mountain Dew</label>
+                    <input type="radio" id="q2radio1" name="q2name" value="grief">
+                    &#124;
+                    <label>Couple of Sodie Pops</label>
+                    <input type="radio" id="q2radio2" name="q2name" value="anger">
+                    &#124;
+                    <label>Pride and Accomplishment</label>
+                    <input type="radio" id="q2radio3" name="q2name" value="pride">
+                    &#124;
+                    <label>Gamers???</label>
+                    <input type="radio" id="q2radio4" name="q2name" value="disgust">
+                </fieldset>
+                <br>
+                <fieldset class="inner" id="surveyq3">
+                    <legend id="smaller">Who is your favorite minion from Minions&lpar;2016&rpar;</legend>
+                    
+                    <label>Bob</label>
+                    <input type="radio" id="q3radio1" name="q3name" value="grief">
+                    &#124;
+                    <label>Kevin</label>
+                    <input type="radio" id="q3radio2" name="q3name" value="anger">
+                    &#124;
+                    <label>Stuart</label>
+                    <input type="radio" id="q3radio3" name="q3name" value="pride">
+                    &#124;
+                    <label>Gru</label>
+                    <input type="radio" id="q3radio4" name="q3name" value="disgust">
+                </fieldset>
+
+                <div id="surveysubmit">
+                    <input type="button" class="button" id="surveybutton" name="surveybutton" value="Submit Answers">
+                </div>
+            </fieldset>
+        </form>
+        <!-- End Survey Section -->
+
+        <!-- Results DIV. Adds the content in after answers and validation has been inputed. -->
+        <fieldset id="results">
+            <legend>Results!</legend>
+
+            <article>
+                <div id="titleresult">
+                    <h2>What sick meme are you???
+                </div>
+            </article>
+
+            <article>
+                <div id="picresult"></div>
+
+                <div id="capresult"></div>
+
+                <div id="userInfo"></div>
+
+                <div id="reset">
+                    <input type="button" class="button" id="resetbutton" name="resetbutton" value="Retake the Quiz?">
+                </div>
+            </article>
+        </fieldset>
+        <!-- End Results Section -->
+    </body>
+
+    <!-- only displays when results are shown -->
+    <footer id="footer">
+        <p>Created by Christopher Lovett</p>
+    </footer>
+</html>
